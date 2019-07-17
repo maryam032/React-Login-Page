@@ -103,6 +103,7 @@ class Body extends React.Component{
                  </div> 
             </div>
         </div>
+   
         )
     }
 }
