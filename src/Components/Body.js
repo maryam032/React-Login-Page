@@ -9,7 +9,7 @@ const style = {
         width:'92%',
         height:450,
         padding:10,
-        outline:'none' 
+        outline:'none'
 }
 
 const butto = {
@@ -41,14 +41,14 @@ class Body extends React.Component{
     }
     handleUsername=(event)=>
     {
-        //update username state on every change
+        //update username state on every change:
         this.setState({
             username:event.target.value
         })
     }
     handlePassword=(event)=>
     {
-        //update username state on every change
+        //update username state on every change:
         this.setState({
             password:event.target.value
         })
@@ -57,7 +57,7 @@ class Body extends React.Component{
         //Handling Button Click
         if(this.state.username===''||this.state.password==='')
         {
-            //empty username or password
+            //empty username or password:
             this.setState({
                 message:<p style={{outline:'none',marginLeft:165,fontWeight:'bold',color:'#B0BEC5',border:null,fontSize:15}}>Empty Username or Password</p>
             })
@@ -66,7 +66,7 @@ class Body extends React.Component{
         {
             if(this.state.username==='admin'&& this.state.password==='admin')
             {
-                //login success
+                //login success:
                 this.setState({
                     message:<p style={{outline:'none',marginLeft:165,fontWeight:'bold',color:'#D6EAF8 ',fontSize:15}}>Login Successfull !</p>
                 })
